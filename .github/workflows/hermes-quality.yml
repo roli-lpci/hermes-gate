@@ -21,7 +21,7 @@ jobs:
           # The gate only reads the checkout. Do not leave the workflow token in
           # .git/config where every later step and declared stage could read it.
           persist-credentials: false
-      - uses: actions/setup-python@v7
+      - uses: actions/setup-python@v7.1.0
         with:
           python-version: '3.12'
       - name: Install project and declared gate tools
